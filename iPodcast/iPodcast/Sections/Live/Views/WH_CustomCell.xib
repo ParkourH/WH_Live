@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WH_CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5e-r3-XNZ">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MAM-U3-VMM" userLabel="userImage">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="MAM-U3-VMM" secondAttribute="height" id="V3b-KQ-bzx"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="senderName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fo-p5-VAB">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="108" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="xhM-pH-Cba"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mb-av-F1o">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="1" green="0.97722786257608574" blue="0.050936445993707835" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.2990636082" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="2Fo-p5-VAB" firstAttribute="leading" secondItem="MAM-U3-VMM" secondAttribute="trailing" id="0iD-yr-qhk"/>
+                        <constraint firstItem="xhM-pH-Cba" firstAttribute="height" relation="lessThanOrEqual" secondItem="r5e-r3-XNZ" secondAttribute="height" id="25b-14-mvp"/>
+                        <constraint firstItem="5Mb-av-F1o" firstAttribute="leading" secondItem="MAM-U3-VMM" secondAttribute="trailing" id="5hY-xw-pmJ"/>
+                        <constraint firstAttribute="bottom" secondItem="MAM-U3-VMM" secondAttribute="bottom" id="DHB-p5-J9g"/>
+                        <constraint firstItem="xhM-pH-Cba" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Mb-av-F1o" secondAttribute="trailing" id="HT8-BD-Rj8"/>
+                        <constraint firstAttribute="bottom" secondItem="5Mb-av-F1o" secondAttribute="bottom" constant="5" id="IIB-CA-81Y"/>
+                        <constraint firstItem="xhM-pH-Cba" firstAttribute="top" secondItem="r5e-r3-XNZ" secondAttribute="top" constant="25" id="Kec-tS-eng"/>
+                        <constraint firstItem="MAM-U3-VMM" firstAttribute="leading" secondItem="r5e-r3-XNZ" secondAttribute="leading" id="SmB-NZ-o6U"/>
+                        <constraint firstAttribute="trailing" secondItem="xhM-pH-Cba" secondAttribute="trailing" id="Srp-mW-BiQ"/>
+                        <constraint firstItem="2Fo-p5-VAB" firstAttribute="top" secondItem="r5e-r3-XNZ" secondAttribute="top" constant="3" id="fPT-wx-xo4"/>
+                        <constraint firstItem="MAM-U3-VMM" firstAttribute="top" secondItem="r5e-r3-XNZ" secondAttribute="top" id="rX3-jd-cje"/>
+                        <constraint firstItem="xhM-pH-Cba" firstAttribute="centerY" secondItem="MAM-U3-VMM" secondAttribute="centerY" id="rha-ZC-ugc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="r5e-r3-XNZ" secondAttribute="trailing" id="Did-Mj-awz"/>
+                <constraint firstItem="r5e-r3-XNZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NQ8-xe-dkc"/>
+                <constraint firstAttribute="bottom" secondItem="r5e-r3-XNZ" secondAttribute="bottom" id="Ter-32-BCh"/>
+                <constraint firstItem="r5e-r3-XNZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vpR-4h-19c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backView" destination="r5e-r3-XNZ" id="CXX-CV-WY3"/>
+                <outlet property="giftImageView" destination="xhM-pH-Cba" id="GLa-5B-sab"/>
+                <outlet property="labelOfGiftName" destination="5Mb-av-F1o" id="1Za-9o-yrx"/>
+                <outlet property="userImageView" destination="MAM-U3-VMM" id="tbD-zu-I02"/>
+                <outlet property="userName" destination="2Fo-p5-VAB" id="HXt-6W-SKm"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="-88"/>
+        </view>
+    </objects>
+</document>

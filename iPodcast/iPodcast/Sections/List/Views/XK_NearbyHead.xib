@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="XK_NearbyHead">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jK4-kp-iDG">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMr-lW-bj7">
+                    <state key="normal" title="筛选">
+                        <color key="titleColor" red="1" green="0.47155677215449388" blue="0.029674817602718728" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="select:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="luz-hV-DGM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jK4-kp-iDG" secondAttribute="bottom" id="0IL-Pd-j4E"/>
+                <constraint firstItem="jK4-kp-iDG" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="2fp-jD-aQ7"/>
+                <constraint firstAttribute="bottom" secondItem="jMr-lW-bj7" secondAttribute="bottom" constant="10" id="F75-W6-ZW1"/>
+                <constraint firstItem="jMr-lW-bj7" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="PED-1X-6eS"/>
+                <constraint firstItem="jK4-kp-iDG" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="e7Z-74-aUP"/>
+                <constraint firstAttribute="trailing" secondItem="jMr-lW-bj7" secondAttribute="trailing" constant="10" id="edj-zh-Nl0"/>
+            </constraints>
+            <point key="canvasLocation" x="57.5" y="75.5"/>
+        </collectionReusableView>
+    </objects>
+</document>
